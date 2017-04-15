@@ -9,8 +9,15 @@
   (map keyword 
     (map str (doall collection))))
 
-;; Trying to create the first row of the tabula-recta here
-(def first-row (zipmap (keywordize alphabet) (zipmap (keywordize alphabet) (alphabet))))
+(defn tabula-recta-generator
+  "Return a Tabula Recta lookup table"
+  [alphabet]
+  (zipmap (keywordize alphabet)
+    (map zipmap (repeat (keywordize alphabet))
+      (iterate rest (cycle alphabet)))))
+
+(def tabula-recta (tabula-recta-generator alphabet))
+
 
 (def row {:A {:A "A" :B "B" :C "C"}})
 
