@@ -4,9 +4,10 @@
 (def alphabet (map char (range (int \A) (inc (int \Z)))))
 
 (defn keywordize
-  "Returns a list of keywords"
+  "Returns a list of keywords from a list of chars"
   [collection]
-  (map keyword (doall (collection))))
+  (map keyword 
+    (map str (doall collection))))
 
 ;; Trying to create the first row of the tabula-recta here
 (def first-row (zipmap (keywordize alphabet) (zipmap (keywordize alphabet) (alphabet))))
