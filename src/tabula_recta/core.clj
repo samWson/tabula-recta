@@ -18,15 +18,6 @@
 
 (def tabula-recta (tabula-recta-generator alphabet))
 
-
-(def row {:A {:A "A" :B "B" :C "C"}})
-
-(get-in row [:A :C])
-
-(alphabet)
-
-(keywordize alphabet)
-
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
