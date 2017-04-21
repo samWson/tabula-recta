@@ -1,5 +1,4 @@
-(ns tabula-recta.core
-  (:gen-class))
+(ns tabula-recta.core)
 
 (def alphabet (map char (range (int \A) (inc (int \Z)))))
 
