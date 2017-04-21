@@ -1,6 +1,6 @@
-(defproject tabula-recta "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+(defproject tabula-recta "0.1.0"
+  :description "A lookup table of offset alphabets"
+  :url "https://github.com/samWson/tabula-recta"
   :license {:name "MIT License"
             :url "https://mit-license.org/"}
   :dependencies [[org.clojure/clojure "1.8.0"]]
