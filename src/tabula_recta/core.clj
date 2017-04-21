@@ -6,7 +6,7 @@
 (defn keywordize
   "Returns a list of keywords from a list of chars"
   [collection]
-  (map keyword 
+  (map keyword
     (map str (doall collection))))
 
 (defn tabula-recta-generator
@@ -18,8 +18,4 @@
 
 (def tabula-recta (tabula-recta-generator alphabet))
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
 
